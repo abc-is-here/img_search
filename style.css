@@ -10,7 +10,7 @@ body{
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 600;
     text-align: center;
     margin: 40px 0 60px 0;
@@ -66,4 +66,51 @@ form{
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: 0.2s ease-in-out;
+}
+
+.sea_result img:hover{
+    opacity: 0.8;
+    transform: scale(1.01);
+}
+
+.sea_result a{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(26, 26, 26);
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-transform: capitalize;
+}
+
+#sh-mo{
+    /* display: none; */
+    cursor: pointer;
+    font-size: 18px;
+    border: none;
+    color: aliceblue;
+    background-color: rgb(158, 0, 0);
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+
+@media screen and (max-width: 768px){
+    .sea_result{
+        width: 45%;
+    }
+
+    .sea_results{
+        padding: 20px;
+    }
+    
+}
+@media screen and (max-width: 768px){
+    .sea_result{
+        width: 100%;
+    }
+    
 }
